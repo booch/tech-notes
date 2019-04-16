@@ -4,6 +4,31 @@ Practical Object-Oriented Design Ruby (POODR)
 NOTE: I have the 1st edition
 
 
+Chapter 5
+---------
+
+
+* It's not what an object /is/ that matters, it's what it /does/
+* The design possibilities are infinite
+	* Me: but design constraints are usually helpful
+	* She later says to be intentional about duck typed interfaces
+* Me: When you see a case statement, you're probably doing OOP wrong
+* Dependencies: class names, method names, argument count and types
+* Interesting that she introduced a named abstract interface (Preparer)
+* Only note I took first time: pattern of passing self to collaborators
+* Concrete code is easy to understand, but hard to extend
+	* Abstract code is harder to understand at first, but easier to change
+		* Me: a good name for the abstraction can *improve* understandability
+* Polymorphism - different object types respond to the same message
+* Disagree: ability to tolerate ambiguity about class/type of an object is the hallmark of a confident designer 
+	* Agree more: Once you begin to treat your objects as if they are defined by their behavior rather than their class, you enter into a new realm of  expressive flexible design
+* Depending on things with very stable interfaces is OK
+	* Like builtin classes
+	* Not as high a cost to leave those dependencies (and code looking at types) in, instead of implementing a duck type
+* Wrong: can't determine nil at compile time
+	* Crystal has proven this wrong
+
+
 Chapter 6
 ---------
 
